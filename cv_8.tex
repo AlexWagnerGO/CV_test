@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Matthew Davis}}\vspace{1.5em} % Your name
+
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
+
+
+\NewEntry{email}{\href{mailto:matthewdavisk@gmail.com}{matthewdavisk@gmail.com} \ \ $\cdotp$\ \ \href{mailto:matthekd@usc.edu}{matthekd@usc.edu}} % Email address
+
+\NewEntry{phone}{(443)-535-2113} % Phone number(s)
+
+\NewEntry{addresses}{(H) 2281 Ballard Way, Ellicott City MD 21042} \ \ % Addresses
+\NewEntry{}{(S) 737 W. 30th Street, Los Angeles CA 91117}
+
+\vspace{1em} % Extra white space between the personal information section and goal
+
+\noindent\spacedlowsmallcaps{Objective}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+
+\Description{Apply my knowledge about logic circuits and programming principals in order further my understanding of the field.}% Goal text
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Education}\vspace{1em}
+
+\NewEntry{2014-present}{The University of Southern California}
+
+\Description{Viterbi School of Engineering\newline 
+\textit{B.S. Computer Engineering and Computer Science}\newline
+Expected Graduation Date- May 2018}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Work Experience}\vspace{1em}
+
+\NewEntry{Summer 2014}{Intern, \textsc {NASA Goddard Space Flight Center}}
+
+\Description{\MarginText{NASA}Designed the “Mobile Cubesat Ground Station Trainer”, a tool by which HAM Radio Operators can learn how to track satellites. Worked with the software SATPC32 to setup the satellite rotators track and channel modulation. Built a 16-element Yagi from scratch to prove a concept for a cheap Right Hand Polarized antenna.}
+
+%------------------------------------------------
+
+\NewEntry{Summer 2013}{Intern, \textsc{NASA Goddard Space Flight Center}}
+
+\Description{Member of AETD(Applied Engineering and Technology Directorate) Cubesat team in which we researched and designed a possible tech demo of a 3U Cubesat with a hyper-spectral imager. Worked with researching processor requirements for processing data onboard. Assisted team electrical engineering in finding proper uplink and downlink radios. Team received Engineering Excellence Award from NASA Goddard's Office of Education for the project.}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Technical Skills}\vspace{1em}
+
+\Description{\MarginText{Programming Languages}Swift, \textsc{java}, C++11, Python}
+
+\Description{\MarginText{WebDevelopment} HTML, \textsc{CSS}, Sass}
+
+\Description{\MarginText{CAD}Xilinx, Inventor, SolidWorks, Virtuoso}
+
+\Description{\MarginText{Office} Microsoft Word, Microsoft Excel, Microsoft Powerpoint}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Class Work
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Class Experience}\vspace{1em}
+
+\NewEntry{Fall 2015}{Principles of Software Development}
+
+\Description{Worked in a project group to build an android app utilizing multithreading and networking. Used networking and parallel processing for in-class Java assignments. Made the boardgame Sorry over the course of the semester.}
+
+%------------------------------------------------
+
+\NewEntry{Fall 2015}{Electrical Engineering Foundations of Digital Systems}
+
+\Description{Learned how to create combinational and sequential logic circuits as well as learning about transistor level designed. Gained proficiency in Xilinx for use with FPGAs and Virtuouso for use with transistors. Final project used both combinational logic, datapath design, and assembly code in order to design a functional square-root calculator.}
+
+%------------------------------------------------
+\NewEntry{Spring 2014}{Discrete Methods in Computer Science}
+
+\Description{Learned the math involed in calculating Big O notation, graph theory, and methods in solving proofs. Utilized strong and weak induction to find solutions to in-class problems.}
+
+%------------------------------------------------
+
+\NewEntry{Spring 2014}{Data Structures and Object Oriented Programming}
+
+\Description{Learned basic datastructure design in C++. Gained proficiency in Qt C++ framework to build a program that mimics Amazon.com. Build a solid understanding of GUI front-end programming as well as backend data structure design.}
+
+%------------------------------------------------
+
+\NewEntry{Fall 2014}{Introduction to Embedded Systems}
+
+\Description{Learned about embedded programming through programming an Aruduino's ATMega328 registers. Learned how to utilize a processor's clock, interupts, ADC, and DAC in order to program a thermostat final project. Learned basic RX and TX protocols to send data between final project units.}
+
+%------------------------------------------------
+\vspace{1em} % Extra space between major sections
+%----------------------------------------------------------------------------------------
+%	Leadership SKILLS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Leadership Skills}\vspace{1em}
+
+\NewEntry{Fall 2015}{Teacher USC Joint Education Project}
+
+\Description{Taught programming to second graders at John W. Mack Elementary. Showcasing lessons on iterative logic in order to help give economically disadvantaged students a new thinking appproach. Hoped to invigorate student interest in STEM education and help change the social culture of otherwise less-fortunate youth.}
+
+\NewEntry{2013 - 2014}{First Robotics Programming Team Lead}
+
+\Description{Transitioned team's code from LabView to Java. Composed lesson plans to teach future generations of team members good coding practice. Designed all code for the team's 2014 robot. Designed the framework for further team leader succession.}
+
+
+%------------------------------------------------
+
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Other Information}\vspace{1em}
+
+\Description{\MarginText{Relevant Hobbies}General Class Amateur Radio Operator\ \ $\cdotp$\ \ Building PCs}
+
+\Description{\MarginText{Interests}Guitar\ \ $\cdotp$\ \ Lifting\ \ $\cdotp$\ \ Saxophone\ \ $\cdotp$\ \ Cooking}
+
+%----------------------------------------------------------------------------------------
+
+\end{cv}
+
+\end{document}
